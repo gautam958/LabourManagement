@@ -6,9 +6,7 @@ const ListTaskType = (props) => {
         props.LoadList();
         // console.warn('use effect', props.LabourReducer.list);
     }, []);
-    // console.warn('List Data', props);
-
-
+    // console.warn('List Data', props); 
     const renderTableData = () => {
         return props.LabourReducer.list.map((TaskData, index) => {
             const { Code, Code_Desc } = TaskData //destructuring
@@ -20,26 +18,21 @@ const ListTaskType = (props) => {
             )
         })
     };
-
     return (
-        <div>
-            <table className="ui celled table">
+        <div style={{ height: "60vh", overflowX: "auto" }}>
+            <table className="ui celled table" >
                 <thead>
                     <tr style={{ fontsize: "14px" }}>
                         <th>Task Type Code</th>
                         <th>Task Type Desc.</th>
                     </tr>
                 </thead>
-                <tbody>
-
+                <tbody >
                     {renderTableData()}
-
-
                 </tbody>
             </table>
         </div>
     );
-
 }
 
 export default ListTaskType

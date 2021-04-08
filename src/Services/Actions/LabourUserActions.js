@@ -15,6 +15,7 @@ import LabourRestApi from './LabourRestApi';
 // };
 export const FetchTask = () => dispatch => {
 
+
     LabourRestApi.FetchTask().fetchAll()
         .then(Response => {
             dispatch({
@@ -24,6 +25,21 @@ export const FetchTask = () => dispatch => {
 
         })
         .catch(err => console.log(`FetchTask ${err} `));
+
+
+
+};
+export const FetchAppConfiguration = () => dispatch => {
+
+    LabourRestApi.FetchAppConfiguration().fetchConfig()
+        .then(Response => {
+            dispatch({
+                type: ACTION_TYPES.FETCH_APPCONFIG,
+                payload: Response.data
+            })
+
+        })
+        .catch(err => console.log(`FetchAppConfiguration ${err} `));
 
 };
 // export const FetchUserDetails = () => dispatch => {

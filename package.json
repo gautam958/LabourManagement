@@ -2,6 +2,7 @@
   "name": "labourmanagement",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://localhost/LabourReact",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.5",
@@ -9,6 +10,8 @@
     "axios": "^0.21.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-keyboard-event-handler": "^1.5.4",
+    "react-provide-state": "^1.0.6",
     "react-redux": "^7.2.3",
     "react-scripts": "4.0.3",
     "redux": "^4.0.5",
