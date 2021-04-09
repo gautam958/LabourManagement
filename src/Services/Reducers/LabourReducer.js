@@ -12,26 +12,26 @@ export const LabourReducer = (state = initialState, action) => {
                 ...state,
                 list: [...action.payload]
             }
-            break;
+
         case ACTION_TYPES.FETCH_TASK:
             // console.warn("Reducer", action)
             return {
                 ...state,
                 list: [...action.payload]
             }
-            break;
+
         case ACTION_TYPES.FETCH_USERDETAILS:
             return {
                 ...state,
                 list: [...action.payload]
             }
-            break;
+
         case ACTION_TYPES.POST_CREATETASK:
             return {
                 ...state,
                 list: [...action.payload]
             }
-            break;
+
 
         default:
             return state;
